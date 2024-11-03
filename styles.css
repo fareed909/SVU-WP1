@@ -1,0 +1,129 @@
+﻿body,
+html {
+    height: 100%;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #002846FF;
+    background: linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.profile {
+    position: relative;
+    height: 75vw;
+    width: 75vw;
+    border-radius: 5vw;
+    margin-top: 5vw;
+    max-height: 40rem;
+    max-width: 40rem;
+}
+
+.profile .profile-img {
+    height: 80vw;
+    max-height: 45rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 576px) {
+    .profile {
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .profile .profile-img {
+        height: 65vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile .profile-img {
+        height: 55vw;
+    }
+
+    .profile {
+        height: 50vw;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile .profile-img {
+        height: 45vw;
+    }
+
+    .profile {
+        height: 40vw;
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .profile .profile-img {
+        height: 40vw;
+    }
+
+    .profile {
+        height: 35vw;
+        width: 35vw;
+    }
+}
+
+#carousel {
+    margin: 2rem 0;
+    height: 250px;
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.arrow {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.47));
+}
+
+#right-arrow {
+    right: 20px;
+}
+
+#left-arrow {
+    left: 20px;
+}
+
+/*Desktop Devices*/
+@media (min-width: 768px) {
+    #carousel {
+        width: 80%;
+    }
+}
